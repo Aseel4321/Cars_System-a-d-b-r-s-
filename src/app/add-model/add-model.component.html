@@ -2,20 +2,54 @@
   <div style="margin-top: 15%;width: 70%;">  <h2 class="mb-4">Add Car Model</h2>
     
     <form >
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" id="name" class="form-control" [(ngModel)]="name" name="name" >
-      </div>
+      <label for="car-name">اختر اسم السيارة:</label>
+<select id="car-name" name="carName" style="padding: 8px; font-size: 16px;">
+  <option value="">-- اختر السيارة --</option>
+  <option value="toyota">Toyota</option>
+  <option value="honda">Honda</option>
+  <option value="ford">Ford</option>
+  <option value="nissan">Nissan</option>
+  <option value="chevrolet">Chevrolet</option>
+  <option value="bmw">BMW</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+  <option value="hyundai">Hyundai</option>
+  <option value="kia">Kia</option>
+</select>
   
-      <div class="mb-3">
-        <label for="model" class="form-label">Model</label>
-        <input type="text" id="model" class="form-control" [(ngModel)]="model" name="model" >
-      </div>
+      <label for="car-model">اختر موديل السيارة:</label>
+      <select id="car-model" name="carModel" style="padding: 8px; font-size: 16px;">
+        <option value="">-- اختر الموديل --</option>
+        <option value="toyota-corolla">Toyota Corolla</option>
+        <option value="honda-civic">Honda Civic</option>
+        <option value="ford-focus">Ford Focus</option>
+        <option value="nissan-altima">Nissan Altima</option>
+        <option value="chevrolet-malibu">Chevrolet Malibu</option>
+        <option value="bmw-3-series">BMW 3 Series</option>
+        <option value="mercedes-c-class">Mercedes C-Class</option>
+        <option value="audi-a4">Audi A4</option>
+      </select>
   
-      <div class="mb-3">
-        <label for="company" class="form-label">Company</label>
-        <input type="text" id="company" class="form-control" [(ngModel)]="company" name="company" >
-      </div>
+      <label for="car-company">Select Car Manufacturer:</label>
+<select id="car-company" name="carCompany" style="padding: 8px; font-size: 16px;">
+  <option value="">-- Select Manufacturer --</option>
+  <option value="toyota">Toyota</option>
+  <option value="honda">Honda</option>
+  <option value="nissan">Nissan</option>
+  <option value="hyundai">Hyundai</option>
+  <option value="kia">Kia</option>
+  <option value="bmw">BMW</option>
+  <option value="mercedes">Mercedes-Benz</option>
+  <option value="audi">Audi</option>
+  <option value="ford">Ford</option>
+  <option value="chevrolet">Chevrolet</option>
+  <option value="volkswagen">Volkswagen</option>
+  <option value="mazda">Mazda</option>
+  <option value="subaru">Subaru</option>
+  <option value="lexus">Lexus</option>
+  <option value="tesla">Tesla</option>
+</select>
+
   
       <button class="btn btn-gold w-100" (click)="ok()">Add Model</button>
     </form> </div>

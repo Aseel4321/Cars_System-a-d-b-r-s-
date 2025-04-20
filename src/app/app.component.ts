@@ -13,7 +13,7 @@ standalone:false,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit{cor=0;
   title = 'Cars_Management_System';
   constructor(private loc:ServesService,private router: Router){
 
@@ -24,11 +24,19 @@ export class AppComponent implements OnInit{
 //this.loc.dalet(6).subscribe((d:any)=>{console.log(d)},(e:any)=>{console.log(e)})
 
   }
-  nav(i:any){
+  nav(i:any){this.cor=i;
     if(i==0){this.router.navigate(['/accept']);}else if(i==1){  this.router.navigate(['/cli']);
       
     }else if(i==2){  this.router.navigate(['/add']);
 }else{ this.router.navigate(['/models']);}
+  }
+  color2(i:any):string{
+    if(i==this.cor){return "font-size:30px; margin-bottom: 15px; cursor: pointer;color:white"}
+    else if(i==this.cor){return "font-size:30px; margin-bottom: 15px; cursor: pointer;color:white"}else if(i==this.cor){
+return "font-size:30px; margin-bottom: 15px; cursor: pointer;color:white"
+    }else{return "font-size:30px; margin-bottom: 15px; cursor: pointer;"}
+    ;
+   
   }
   o(){const data= {
     "id": 24,

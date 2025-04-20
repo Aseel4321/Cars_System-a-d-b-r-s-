@@ -50,10 +50,10 @@
 
   <!-- الشريط الجانبي -->
   <div style="width: 15%; background-color: #000; padding: 20px; border-right: 1px solid gold;">
-    <div style="margin-bottom: 20px; cursor: pointer;" (click)="nav(0)">Review Request</div>
-    <div style="margin-bottom: 10px; cursor: pointer;"(click)="nav(1)" >View Client</div>
-    <div style="margin-bottom: 10px; cursor: pointer;"(click)="nav(2)" >New Car Model</div>
-    <div style="margin-bottom: 10px; cursor: pointer;" (click)="nav(3)">⚙️ الإعدادات</div>
+    <div [style]="color2(0)"  (click)="nav(0)">Review Request</div>
+    <div  [style]="color2(1)"  (click)="nav(1)" >View Client</div>
+    <div  [style]="color2(2)"  (click)="nav(2)" >New Car Model</div>
+    <div [style]="color2(3)"  (click)="nav(3)"> Models</div>
   </div>
 
   <!-- محتوى الصفحة -->
