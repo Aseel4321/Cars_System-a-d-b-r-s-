@@ -1,0 +1,166 @@
+{
+  "locations": [
+    {
+      "id": "0",
+      "name": "Acme Fresh Start Housing",
+      "city": "Chicago",
+      "state": "IL",
+      "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+      "availableUnits": 4,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "3",
+      "name": "Homesteady Housing",
+      "city": "Chicago",
+      "state": "IL",
+      "photo": "https://angular.dev/assets/images/tutorials/common/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
+      "availableUnits": 1,
+      "wifi": true,
+      "laundry": false
+    },
+    {
+      "id": "4",
+      "name": "Happy Homes Group",
+      "city": "Gary",
+      "state": "IN",
+      "photo": "https://angular.dev/assets/images/tutorials/common/krzysztof-hepner-978RAXoXnH4-unsplash.jpg",
+      "availableUnits": 1,
+      "wifi": true,
+      "laundry": false
+    },
+    {
+      "id": "7",
+      "name": "Hopeful Housing Solutions",
+      "city": "Oakland",
+      "state": "CA",
+      "photo": "https://angular.dev/assets/images/tutorials/common/r-architecture-GGupkreKwxA-unsplash.jpg",
+      "availableUnits": 2,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "8",
+      "name": "aseelaseel882000",
+      "city": "jordan",
+      "state": "IL",
+      "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+      "availableUnits": 4,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "9",
+      "name": "Capital Safe Towns",
+      "city": "Portland",
+      "state": "OR",
+      "photo": "https://angular.dev/assets/images/tutorials/common/webaliser-_TPTXZd9mOo-unsplash.jpg",
+      "availableUnits": 6,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "22",
+      "name": "aseel",
+      "city": "jordan",
+      "state": "IL",
+      "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+      "availableUnits": 4,
+      "wifi": true,
+      "laundry": true
+    }
+  ],
+  "users": [],
+  "accept": [
+    {
+      "id": "32",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "4",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "2",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "6",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "1",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "5",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "6",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "2",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "3",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    },
+    {
+      "id": "5",
+      "Name": "aleen",
+      "Phone": 234563,
+      "Email": "ww@fffff",
+      "Address": "ssssss",
+      "Aproval_Status": "yes"
+    }
+  ],
+  "car_add": [],
+  "cars": [
+    {
+      "id": "1",
+      "Name": "DDDDD",
+      "Model_id": 44444,
+      "Client_id": 1
+    }
+  ]
+}

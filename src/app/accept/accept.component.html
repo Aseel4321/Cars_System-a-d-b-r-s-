@@ -1,0 +1,23 @@
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px; background-color: #111; min-height: 100vh;">
+  <div *ngFor="let item of list; let i = index"
+       style=" background: #000; color: gold; border: 1px solid gold; border-radius: 10px;
+              padding: 15px; width: 15vw; height: 50%; box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);">
+    
+    <div><strong >االاسم</strong> {{ item.Name }}</div>
+    <div><strong >الهاتف:</strong> {{ item.Phone }}</div>
+    <div><strong >الإيميل:</strong> {{ item.Email }}</div>
+    <div><strong >العنوان:</strong> {{ item.Address }}</div>
+    <div><strong  >الحالة:</strong> {{ item.Aproval_Status }}</div>
+
+    <div style="margin-top: 10px; display: flex; gap: 5px;">
+      <button (click)="yes(i)" style="flex: 1; background-color: gold; color: black; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Yes</button>
+      <button (click)="no(i)" style="flex: 1; background-color: black; color: gold; border: 1px solid gold; padding: 5px 10px; border-radius: 5px; cursor: pointer;">No</button>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- <button style="padding: 5px 10px;" (click)="ok()">ok</button>
+    <button style="padding: 5px 10px;" (click)="ok1()">ok</button>
+    <button style="padding: 5px 10px;" (click)="ok2()">oks</button>-->

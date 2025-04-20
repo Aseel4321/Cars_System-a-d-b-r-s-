@@ -1,0 +1,12 @@
+<div style="display: flex; flex-direction: column; height: 100vh; gap: 10px; padding: 10px;">
+    <div 
+      *ngFor="let item of list let i = index" 
+      style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; 
+             padding: 10px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; gap: 15px;"
+>
+      <div style="flex: 1;">{{ item.Name }}</div>
+      <div style="flex: 1;">{{ item.Model }}</div>
+      <div style="flex: 1;">{{ item.Company }}</div>
+     
+    </div>
+  </div>

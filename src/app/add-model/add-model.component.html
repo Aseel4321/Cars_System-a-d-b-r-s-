@@ -1,0 +1,24 @@
+<div class="container mt-4">
+  <div style="margin-top: 15%;width: 70%;">  <h2 class="mb-4">Add Car Model</h2>
+    
+    <form >
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="name" name="name" >
+      </div>
+  
+      <div class="mb-3">
+        <label for="model" class="form-label">Model</label>
+        <input type="text" id="model" class="form-control" [(ngModel)]="model" name="model" >
+      </div>
+  
+      <div class="mb-3">
+        <label for="company" class="form-label">Company</label>
+        <input type="text" id="company" class="form-control" [(ngModel)]="company" name="company" >
+      </div>
+  
+      <button class="btn btn-gold w-100" (click)="ok()">Add Model</button>
+    </form> </div>
+  
+  </div>
+  
