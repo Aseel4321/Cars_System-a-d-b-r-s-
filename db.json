@@ -154,7 +154,28 @@
       "Aproval_Status": "yes"
     }
   ],
-  "car_add": [],
+  "car_model": [
+    {
+      "id": "1",
+      "Name": "honda-civic",
+      "Company": "mazda"
+    },
+    {
+      "id": "1",
+      "Name": "",
+      "Company": ""
+    },
+    {
+      "id": "1",
+      "Name": "nissan-altima",
+      "Company": "audi"
+    },
+    {
+      "id": "1",
+      "Name": "toyota-corolla",
+      "Company": ""
+    }
+  ],
   "cars": [
     {
       "id": "1",
