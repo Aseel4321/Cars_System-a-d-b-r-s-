@@ -13,16 +13,19 @@ standalone:false,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{cor=0;
+export class AppComponent implements OnInit{
+user_name="";
+  cor=0;
   title = 'Cars_Management_System';
   constructor(private loc:ServesService,private router: Router){
 
   }
+
   ngOnInit(): void {
 //this.loc.gett().subscribe((d:any)=>{console.log(d)},(e:any)=>{console.log(e)})
 //this.loc.POSTT(data).subscribe((d:any)=>{console.log(d)},(e:any)=>{console.log(e)})
 //this.loc.dalet(6).subscribe((d:any)=>{console.log(d)},(e:any)=>{console.log(e)})
-
+ this.user_name=this.loc.user_name;
   }
   nav(i:any){this.cor=i;
     if(i==0){this.router.navigate(['/accept']);}else if(i==1){  this.router.navigate(['/cli']);

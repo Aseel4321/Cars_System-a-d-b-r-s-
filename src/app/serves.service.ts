@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
 
 )
 export class ServesService {
-
- 
+ user_name="Aseel ghaleb";
+  list_yess:any=[];
   list_cars:cars[]=[{id:34563,Name:"DDDDD",Model_id:44444,Client_id:11111},{id:3463,Name:"DDDD",Model_id:4444,Client_id:4324},{id:3473,Name:"ggg",Model_id:44444,Client_id:11111}]
   list_yes:Client_Entity[]=[]
   list_add:car_add[]=[];
@@ -24,24 +24,35 @@ export class ServesService {
  get_user():Observable<any>{
 return this.http.get('http://localhost:3000/users');
  }
+ get_cars():Observable<any>{
+  return this.http.get('http://localhost:3000/cars');
+   }
  get_accept():Observable<any>{
   return this.http.get('http://localhost:3000/accept');
    }
  post_accept(data:any):Observable<any>{
   return this.http.post('http://localhost:3000/accept',data);
    }
+   get_model():Observable<any>{
+    return this.http.get('http://localhost:3000/car_model');
+     }
  POSTT(data:any):Observable<any>{
   return this.http.post('http://localhost:3000/locations',data);
    }
    add_model(data:any):Observable<any>{
     return this.http.post('http://localhost:3000/car_model',data);
      }
+   
    dalet(dat:any):Observable<any>{
     return this.http.delete(`http://localhost:3000/locations`+`/`+dat);
      }
+    
      dalete_users(dat:any):Observable<any>{
       return this.http.delete(`http://localhost:3000/users`+`/`+dat);
        }
+       dalete_model(dat:any):Observable<any>{
+        return this.http.delete(`http://localhost:3000/car_model`+`/`+dat);
+         }
      upd(dat:any):Observable<any>{
       return this.http.patch(`http://localhost:3000/locations`+`/`+8,dat);
        } 

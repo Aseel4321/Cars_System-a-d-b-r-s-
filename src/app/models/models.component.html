@@ -1,12 +1,33 @@
-<div style="display: flex; flex-direction: column; height: 100vh; gap: 10px; padding: 10px;">
-    <div 
-      *ngFor="let item of list let i = index" 
-      style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; 
-             padding: 10px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; gap: 15px;"
->
-      <div style="flex: 1;">{{ item.Name }}</div>
-      <div style="flex: 1;">{{ item.Model }}</div>
-      <div style="flex: 1;">{{ item.Company }}</div>
-     
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px;">
+  <div
+    *ngFor="let item of list; let i = index"
+    style="flex: 0 1 calc(20% - 10px); display: flex; flex-direction: column;
+           padding: 10px; border: 1px solid gold; border-radius: 6px;
+           background-color: black; color: gold; font-size: 14px; box-sizing: border-box;">
+           
+    <!-- سطر 1: Model و Name -->
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3 style="font-size: 30px; margin: 0;">Model</h3>
+      <div style="font-size: 30px;">{{ item.Name }}</div>
     </div>
+
+    <!-- سطر 2: Company و الاسم -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+      <h3 style="font-size: 30px; margin: 0;">Company</h3>
+      <div style="font-size: 30px;">{{ item.Company }}</div>
+    </div>
+
+    <!-- زر الحذف -->
+    <button
+    (click)="deleteItem(i)"
+      style="margin-top: auto; align-self: flex-end; background-color: gold; color: black;
+             border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+      حذف
+    </button>
   </div>
+</div>
+
+
+
+
+

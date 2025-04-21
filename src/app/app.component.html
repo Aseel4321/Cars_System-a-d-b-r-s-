@@ -41,8 +41,24 @@
 </div>-->
 <!--<button (click)="o()">ddd </button>-->
 <!-- الهيدر -->
-<div style="height: 15vh; width: 100vw; background-color: black; color: gold; display: flex; align-items: center; padding-left: 30px; font-size: 26px; font-weight: bold; box-shadow: 0 4px 6px rgba(255, 215, 0, 0.3);">
-  Dashboard
+<!-- الشريط العلوي -->
+<div style="height: 15vh; width: 100vw; background-color: black; color: gold; 
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 30px; font-size: 26px; font-weight: bold; 
+            box-shadow: 0 4px 6px rgba(255, 215, 0, 0.3);">
+  
+  <!-- العنوان -->
+  <div>Dashboard</div>
+
+  <!-- اسم المستخدم وزر الخروج -->
+  <div style="display: flex; align-items: center; gap: 20px; font-size: 18px;">
+    <div>👤 {{user_name}}</div>
+    <button  
+            style="padding: 6px 14px; background-color: gold; color: black; 
+                   border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
+      خروج
+    </button>
+  </div>
 </div>
 
 <!-- الجسم الكامل -->
@@ -50,10 +66,10 @@
 
   <!-- الشريط الجانبي -->
   <div style="width: 15%; background-color: #000; padding: 20px; border-right: 1px solid gold;">
-    <div [style]="color2(0)"  (click)="nav(0)">Review Request</div>
-    <div  [style]="color2(1)"  (click)="nav(1)" >View Client</div>
-    <div  [style]="color2(2)"  (click)="nav(2)" >New Car Model</div>
-    <div [style]="color2(3)"  (click)="nav(3)"> Models</div>
+    <div [style]="color2(0)" (click)="nav(0)">Review Request</div>
+    <div [style]="color2(1)" (click)="nav(1)">View Client</div>
+    <div [style]="color2(2)" (click)="nav(2)">New Car Model</div>
+    <div [style]="color2(3)" (click)="nav(3)">Models</div>
   </div>
 
   <!-- محتوى الصفحة -->
@@ -61,6 +77,7 @@
     <router-outlet></router-outlet>
   </div>
 </div>
+
 
 
 

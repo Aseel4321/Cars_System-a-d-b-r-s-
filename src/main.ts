@@ -10,9 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { ClientComponent } from './app/client/client.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ServesService } from './app/serves.service';
+import { ModelsComponent } from './app/models/models.component';
 
 @NgModule({
-  declarations: [AppComponent,AcceptComponent,ClientComponent],  // تضمين المكون الرئيسي
+  declarations: [AppComponent,AcceptComponent,ClientComponent,ModelsComponent],  // تضمين المكون الرئيسي
   imports: [BrowserModule,CommonModule,RouterModule.forRoot(routes),FormsModule,
     HttpClientModule
   ] ,     // تضمين الوحدة الخاصة بالمتصفح

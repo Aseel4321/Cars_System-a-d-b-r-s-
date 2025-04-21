@@ -1,14 +1,23 @@
-<div style="display: flex; flex-direction: column; height: 100vh; gap: 10px; padding: 10px;">
-    <div 
-      *ngFor="let item of list() let i = index" 
-      style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; 
-             padding: 10px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; gap: 15px;"
-    >
-      <div style="width: 30px;">d</div>
-      <div style="flex: 1;">{{ item.id }}</div>
-      <div style="flex: 1;">{{ item.Name }}</div>
-      <div style="flex: 1;">{{ item.Model_id}}</div>
-      <div style="flex: 1;">{{ item.Client_id }}</div>
-    
+<div style="display: flex; flex-wrap: wrap; gap: 15px; padding: 20px;">
+  <div 
+    *ngFor="let item of list() let i = index" 
+    style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; 
+           width: 45%; min-width: 300px;
+           padding: 15px; border: 1px solid gold; border-radius: 10px; 
+           background-color: #111; gap: 20px; color: gold; 
+           box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);"
+  >
+    <div style="width: 40px; text-align: center; font-weight: bold; font-size:25px;">{{ i + 1 }}</div>
+
+    <div style="flex: 1; text-align: center;">
+      <div style="opacity: 0.8; font-size: larger;">Name</div>
+      <div style="font-size: larger; font-weight: 500;">{{ item.Name }}</div>
+    </div>
+
+    <div style="flex: 1; text-align: center;">
+      <div style="opacity: 0.8; font-size: larger;">Model</div>
+      <div style="font-size: larger; font-weight: 500;">{{ item.Model_id }}</div>
     </div>
   </div>
+</div>
+
