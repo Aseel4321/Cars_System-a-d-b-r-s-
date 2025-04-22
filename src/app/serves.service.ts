@@ -1,26 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable, of, throwError } from 'rxjs';
 
 @Injectable(
 
 )
 export class ServesService {
-
-  getItemAsync() {
-      return new Promise((resolve, reject) => {
-        try {
-          const value = localStorage.getItem('color');
-          
-    
-            resolve(value);
-          
-    
-        } catch (e) {
-          reject(e);
-        }
-      });
-    }
+  
     
   
  user_name="Aseel ghaleb";

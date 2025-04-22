@@ -42,15 +42,15 @@
 <!--<button (click)="o()">ddd </button>-->
 <!-- الهيدر -->
 <!-- الشريط العلوي -->
-<div [class]="value == 'false' ? 'headerd' : 'headerw'">
+<div class='headerd'>
   
   <!-- العنوان -->
   <div>Dashboard</div>
-<button (click)="setItemAsync()">{{value}}</button>
+
   <!-- اسم المستخدم وزر الخروج -->
   <div style="display: flex; align-items: center; gap: 20px; font-size: 18px;">
     <div>👤 {{user_name}}</div>
-    <button  [class]="value == 'false' ? 'buttond' : 'buttonw'" 
+    <button class= 'buttond'
             >
       خروجs
     </button>

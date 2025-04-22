@@ -12,14 +12,15 @@ standalone:false,
   styleUrl: './accept.component.css'
 }) 
 export class AcceptComponent implements OnInit{list:any=[];
+ v1:any;
   constructor(private Serves:ServesService,private router: Router,private http:HttpClient){}
   ngOnInit(): void {
     this.Serves.get_user().subscribe((d:any)=>{this.list=d;
-      console.log(d)},(e:any)=>{console.log(e)})
-      this.Serves.getItemAsync().then((v)=>{console.log('v');
-        console.log(v);
-      }).catch((e)=>{});
-    //this.list=this.Serves.list;
+      
+      console.log(d)},(e:any)=>{console.log(e)});
+
+    
+  
   }
   
   ok(){

@@ -138,23 +138,7 @@
       "Aproval_Status": "yes"
     }
   ],
-  "car_model": [
-    {
-      "id": "1",
-      "Name": "honda-civic",
-      "Company": "mazda"
-    },
-    {
-      "id": "1",
-      "Name": "ford-focus",
-      "Company": "chevrolet"
-    },
-    {
-      "id": "1",
-      "Name": "bmw-3-series",
-      "Company": "chevrolet"
-    }
-  ],
+  "car_model": [],
   "cars": [
     {
       "id": "1",
