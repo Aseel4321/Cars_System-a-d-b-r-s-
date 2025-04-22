@@ -71,16 +71,7 @@
       "laundry": true
     }
   ],
-  "users": [],
-  "accept": [
-    {
-      "id": "6",
-      "Name": "aleen",
-      "Phone": 234563,
-      "Email": "ww@fffff",
-      "Address": "ssssss",
-      "Aproval_Status": "yes"
-    },
+  "users": [
     {
       "id": "1",
       "Name": "aleen",
@@ -88,7 +79,9 @@
       "Email": "ww@fffff",
       "Address": "ssssss",
       "Aproval_Status": "yes"
-    },
+    }
+  ],
+  "accept": [
     {
       "id": "5",
       "Name": "aleen",
@@ -138,7 +131,18 @@
       "Aproval_Status": "yes"
     }
   ],
-  "car_model": [],
+  "car_model": [
+    {
+      "id": "1",
+      "Name": "ford-focus",
+      "Company": "subaru"
+    },
+    {
+      "id": "1",
+      "Name": "honda-civic",
+      "Company": "subaru"
+    }
+  ],
   "cars": [
     {
       "id": "1",

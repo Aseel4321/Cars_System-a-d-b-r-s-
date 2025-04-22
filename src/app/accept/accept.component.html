@@ -1,5 +1,5 @@
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px; background-color: #111; min-height: 100vh;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px; min-height: 100vh;width: 100vw;">
   <div *ngIf="list.length === 0; else showList">nod{{v1}}</div>
   
   <ng-template #showList> <div  *ngFor="let item of list; let i = index"

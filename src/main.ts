@@ -11,9 +11,12 @@ import { ClientComponent } from './app/client/client.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ServesService } from './app/serves.service';
 import { ModelsComponent } from './app/models/models.component';
+import { HeaderComponent } from './app/header/header.component';
+import { HomepageComponent } from './app/homepage/homepage.component';
+import { SiderComponent } from './app/sider/sider.component';
 
 @NgModule({
-  declarations: [AppComponent,AcceptComponent,ClientComponent,ModelsComponent],  // تضمين المكون الرئيسي
+  declarations: [AppComponent,AcceptComponent,ClientComponent,ModelsComponent,HeaderComponent,HomepageComponent,SiderComponent ],  // تضمين المكون الرئيسي
   imports: [BrowserModule,CommonModule,RouterModule.forRoot(routes),FormsModule,
     HttpClientModule
   ] ,     // تضمين الوحدة الخاصة بالمتصفح

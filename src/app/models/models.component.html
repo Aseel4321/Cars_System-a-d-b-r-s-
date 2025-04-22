@@ -1,4 +1,4 @@
-<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px;width: 100vw;">
   <div
     *ngFor="let item of list; let i = index"
     style="flex: 0 1 calc(20% - 10px); display: flex; flex-direction: column;
@@ -22,8 +22,7 @@
     (click)="deleteItem(i)"
       style="margin-top: auto; align-self: flex-end; background-color: gold; color: black;
              border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-weight: bold;">
-      حذف
-    </button>
+delete    </button>
   </div>
 </div>
 

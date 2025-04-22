@@ -17,5 +17,5 @@ export class ClientComponent implements OnInit{
     console.log(d);
    },(e:any)=>{console.log(e)});
   }
-  ok(i:any){this.router.navigate(['/cars-cli',i,this.list_yes]);}
+  ok(i:any){this.router.navigate(['h/cars-cli',i,this.list_yes]);}
 }
