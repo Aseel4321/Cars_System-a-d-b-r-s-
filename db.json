@@ -132,41 +132,150 @@
     }
   ],
   "car_model": [
-    {
-      "id": "1",
-      "Name": "ford-focus",
-      "Company": "subaru"
-    },
-    {
-      "id": "1",
-      "Name": "honda-civic",
-      "Company": "subaru"
-    }
+  
+  { "id": "1", "Name": "nissan-altima", "Company": "Nissan" },
+  { "id": "2", "Name": "mazda-6", "Company": "Mazda" },
+  { "id": "3", "Name": "corolla", "Company": "Toyota" },
+  { "id": "4", "Name": "civic", "Company": "Honda" },
+  { "id": "5", "Name": "model-3", "Company": "Tesla" },
+  { "id": "6", "Name": "mustang", "Company": "Ford" },
+  { "id": "7", "Name": "a4", "Company": "Audi" },
+  { "id": "8", "Name": "3-series", "Company": "BMW" },
+  { "id": "9", "Name": "elantra", "Company": "Hyundai" },
+  { "id": "10", "Name": "optima", "Company": "Kia" },
+  { "id": "11", "Name": "malibu", "Company": "Chevrolet" },
+  { "id": "12", "Name": "passat", "Company": "Volkswagen" },
+  { "id": "13", "Name": "legacy", "Company": "Subaru" },
+  { "id": "14", "Name": "508", "Company": "Peugeot" },
+  { "id": "15", "Name": "octavia", "Company": "Skoda" },
+  { "id": "16", "Name": "megane", "Company": "Renault" },
+  { "id": "17", "Name": "charger", "Company": "Dodge" },
+  { "id": "18", "Name": "is", "Company": "Lexus" },
+  { "id": "19", "Name": "q50", "Company": "Infiniti" },
+  { "id": "20", "Name": "camry", "Company": "Toyota" }
+
+
   ],
   "cars": [
     {
       "id": "1",
-      "Name": "DDDDD",
-      "Model_id": 44444,
+      "Name": "Toyota Corolla",
+      "Model_id": 2022,
       "Client_id": 1
     },
     {
-      "id": "1",
-      "Name": "DDDsDD",
-      "Model_id": 44444,
+      "id": "2",
+      "Name": "Honda Civic",
+      "Model_id": 2021,
       "Client_id": 1
     },
     {
-      "id": "1",
-      "Name": "DDDDD",
-      "Model_id": 44444,
+      "id": "3",
+      "Name": "Ford Mustang",
+      "Model_id": 2020,
       "Client_id": 1
     },
     {
-      "id": "1",
-      "Name": "DDDsDD",
-      "Model_id": 44444,
-      "Client_id": 1
+      "id": "4",
+      "Name": "Tesla Model 3",
+      "Model_id": 2023,
+      "Client_id": 104
+    },
+    {
+      "id": "5",
+      "Name": "BMW 3 Series",
+      "Model_id": 2019,
+      "Client_id": 105
+    },
+    {
+      "id": "6",
+      "Name": "Mercedes-Benz C-Class",
+      "Model_id": 2022,
+      "Client_id": 106
+    },
+    {
+      "id": "7",
+      "Name": "Audi A4",
+      "Model_id": 2021,
+      "Client_id": 107
+    },
+    {
+      "id": "8",
+      "Name": "Hyundai Elantra",
+      "Model_id": 2020,
+      "Client_id": 108
+    },
+    {
+      "id": "9",
+      "Name": "Kia Optima",
+      "Model_id": 2018,
+      "Client_id": 109
+    },
+    {
+      "id": "10",
+      "Name": "Chevrolet Malibu",
+      "Model_id": 2017,
+      "Client_id": 110
+    },
+    {
+      "id": "11",
+      "Name": "Nissan Altima",
+      "Model_id": 2019,
+      "Client_id": 111
+    },
+    {
+      "id": "12",
+      "Name": "Mazda 6",
+      "Model_id": 2020,
+      "Client_id": 112
+    },
+    {
+      "id": "13",
+      "Name": "Volkswagen Passat",
+      "Model_id": 2021,
+      "Client_id": 113
+    },
+    {
+      "id": "14",
+      "Name": "Subaru Legacy",
+      "Model_id": 2022,
+      "Client_id": 114
+    },
+    {
+      "id": "15",
+      "Name": "Peugeot 508",
+      "Model_id": 2023,
+      "Client_id": 115
+    },
+    {
+      "id": "16",
+      "Name": "Skoda Octavia",
+      "Model_id": 2019,
+      "Client_id": 116
+    },
+    {
+      "id": "17",
+      "Name": "Renault Megane",
+      "Model_id": 2021,
+      "Client_id": 117
+    },
+    {
+      "id": "18",
+      "Name": "Dodge Charger",
+      "Model_id": 2020,
+      "Client_id": 118
+    },
+    {
+      "id": "19",
+      "Name": "Lexus IS",
+      "Model_id": 2022,
+      "Client_id": 119
+    },
+    {
+      "id": "20",
+      "Name": "Infiniti Q50",
+      "Model_id": 2023,
+      "Client_id": 120
     }
   ]
 }
