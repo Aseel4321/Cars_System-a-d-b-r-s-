@@ -74,14 +74,6 @@
   "users": [],
   "accept": [
     {
-      "id": "2",
-      "Name": "aleen",
-      "Phone": 234563,
-      "Email": "ww@fffff",
-      "Address": "ssssss",
-      "Aproval_Status": "yes"
-    },
-    {
       "id": "6",
       "Name": "aleen",
       "Phone": 234563,
@@ -151,6 +143,16 @@
       "id": "1",
       "Name": "honda-civic",
       "Company": "mazda"
+    },
+    {
+      "id": "1",
+      "Name": "ford-focus",
+      "Company": "chevrolet"
+    },
+    {
+      "id": "1",
+      "Name": "bmw-3-series",
+      "Company": "chevrolet"
     }
   ],
   "cars": [

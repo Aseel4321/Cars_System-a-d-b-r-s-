@@ -16,6 +16,9 @@ export class AcceptComponent implements OnInit{list:any=[];
   ngOnInit(): void {
     this.Serves.get_user().subscribe((d:any)=>{this.list=d;
       console.log(d)},(e:any)=>{console.log(e)})
+      this.Serves.getItemAsync().then((v)=>{console.log('v');
+        console.log(v);
+      }).catch((e)=>{});
     //this.list=this.Serves.list;
   }
   

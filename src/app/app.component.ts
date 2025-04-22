@@ -17,10 +17,22 @@ export class AppComponent implements OnInit{
 user_name="";
   cor=0;
   title = 'Cars_Management_System';
+   
   constructor(private loc:ServesService,private router: Router){
 
   }
-
+  value: string | null = localStorage.getItem('color');
+  setItemAsync() {
+    if (this.value === "false") {
+      localStorage.setItem('color','true');
+    }else if (this.value === null){
+      localStorage.setItem('color','true');}
+    else {
+      localStorage.setItem('color','false');
+    }
+     this.value = localStorage.getItem('color');
+    console.log(this.value);
+}
   ngOnInit(): void {
 //this.loc.gett().subscribe((d:any)=>{console.log(d)},(e:any)=>{console.log(e)})
 //this.loc.POSTT(data).subscribe((d:any)=>{console.log(d)},(e:any)=>{console.log(e)})

@@ -6,6 +6,23 @@ import { Observable } from 'rxjs';
 
 )
 export class ServesService {
+
+  getItemAsync() {
+      return new Promise((resolve, reject) => {
+        try {
+          const value = localStorage.getItem('color');
+          
+    
+            resolve(value);
+          
+    
+        } catch (e) {
+          reject(e);
+        }
+      });
+    }
+    
+  
  user_name="Aseel ghaleb";
   list_yess:any=[];
   list_cars:cars[]=[{id:34563,Name:"DDDDD",Model_id:44444,Client_id:11111},{id:3463,Name:"DDDD",Model_id:4444,Client_id:4324},{id:3473,Name:"ggg",Model_id:44444,Client_id:11111}]
