@@ -37,7 +37,7 @@ export class AcceptComponent implements OnInit{list:any=[];
   }
 yes(i:any){let i1=0;
   i1=this.list[i].id;
-  this.list[i].Aproval_Status='yes';
+  this.list[i].Aproval_Status='approved';
   this.Serves.post_accept(this.list[i]).subscribe((d:any)=>{
   console.log(d)},(e:any)=>{console.log(e)})
   this.list.splice(i,1);
