@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4893616715766810081" datatype="html">
+        <source>No data available</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nameLabel" datatype="html">
+        <source>Name:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phoneLabel" datatype="html">
+        <source>Phone:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailLabel" datatype="html">
+        <source>Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="addressLabel" datatype="html">
+        <source>Address:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="statusLabel" datatype="html">
+        <source>Approval Status:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="yesButton" datatype="html">
+        <source> Yes </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noButton" datatype="html">
+        <source> No </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accept/accept.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6871001759096462425" datatype="html">
+        <source>Add Car Model</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/add-model/add-model.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7932185709769714888" datatype="html">
+        <source>Select Car Model</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/add-model/add-model.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="261360152966248442" datatype="html">
+        <source>Select Car Manufacturer:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/add-model/add-model.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8382424786253158265" datatype="html">
+        <source>Add Model</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/add-model/add-model.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

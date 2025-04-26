@@ -9,6 +9,19 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "ar": {
+            "translation": "src/locale/accept.ar.xlf",
+            "baseHref": "/ar/"
+          },
+          "en": {
+            "translation": "src/locale/accept.en.xlf",
+            "baseHref": "/en/"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -17,13 +30,15 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "."
               }
             ],
             "styles": [
@@ -33,6 +48,42 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "production-en": {
+              "localize": ["en"],
+              "outputPath": "dist/CARS_MANAGEMENT_SYSTEM/en",
+              "baseHref": "/en/",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "production-ar": {
+              "localize": ["ar"],
+              "outputPath": "dist/CARS_MANAGEMENT_SYSTEM/ar",
+              "baseHref": "/ar/",
               "budgets": [
                 {
                   "type": "initial",
@@ -61,6 +112,12 @@
             "production": {
               "buildTarget": "Cars_Management_System:build:production"
             },
+            "en": {
+              "buildTarget": "Cars_Management_System:build:production-en"
+            },
+            "ar": {
+              "buildTarget": "Cars_Management_System:build:production-ar"
+            },
             "development": {
               "buildTarget": "Cars_Management_System:build:development"
             }
@@ -75,13 +132,15 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "."
               }
             ],
             "styles": [
@@ -94,6 +153,6 @@
     }
   },
   "cli": {
-    "analytics": "c004fa72-a051-49bd-8ee7-ddee1d39d3b8"
+    "analytics": false
   }
 }

@@ -1,0 +1,19 @@
+.card-item {
+    background: #fce4ec;
+    color: #880e4f;
+    border: 1px solid #f06292;
+    border-radius: 12px;
+    padding: 12px;
+    flex: 1 1 100%;
+    box-shadow: 0 4px 8px rgba(240, 98, 146, 0.2);
+    font-size: 0.9em;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+   max-height: 300px; /* ✅ يمنع التغيير بالحجم */
+    overflow: hidden;  /* ⛔ يمنع التمدد أو القطع */
+  }
+  
+  .card-item:hover {
+    transform: scale(1.01);
+  }
+  

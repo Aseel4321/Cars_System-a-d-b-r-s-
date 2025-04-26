@@ -9,7 +9,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'h', pathMatch: 'full' },
-    { path: 'h', component:HomepageComponent,children:[{ path: 'accept', component: AcceptComponent },
+    { path: 'h', component:HomepageComponent,children:[
+        { path: 'accept', component: AcceptComponent },
     { path: 'cli', component: ClientComponent},
    { path: 'cars-cli/:id', component: ClientCarsComponent }
     ,{ path: 'add', component: AddModelComponent },

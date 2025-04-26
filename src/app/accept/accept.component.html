@@ -1,29 +1,112 @@
+<div class="container">
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 10px; min-height: 100vh;width: 100vw;">
-  <div *ngIf="list.length === 0; else showList">nod{{v1}}</div>
-  
-  <ng-template #showList> <div  *ngFor="let item of list; let i = index"
-       style=" background: #000; color: gold; border: 1px solid gold; border-radius: 10px;
-              padding: 15px; width: 15vw; height: 50%; box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);">
-  
-    <div><strong>Name</strong> {{ item.Name }}</div>
-    <div><strong>Phone:</strong> {{ item.Phone }}</div>
-    <div><strong>Email:</strong> {{ item.Email }}</div>
-    <div><strong>Address:</strong> {{ item.Address }}</div>
-    <div><strong>Aproval_Status:</strong> {{item.status}}</div>
+  <!-- شبكة الأعمدة -->
+  <div class="grid-wrapper">
 
-    <div style="margin-top: 10px; display: flex; gap: 5px;">
-      <button (click)="yes(i)" style="flex: 1; background-color: gold; color: black; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Yes</button>
-      <button (click)="no(i)" style="flex: 1; background-color: black; color: gold; border: 1px solid gold; padding: 5px 10px; border-radius: 5px; cursor: pointer;">No</button>
+    <!-- حالة عدم وجود بيانات -->
+    <div *ngIf="list.length === 0; else showList" class="no-data">
+      <span i18n>No data available</span>
     </div>
 
-  </div></ng-template>
- 
+    <!-- عرض القائمة -->
+    <ng-template #showList>
+      <div *ngFor="let item of list; let i = index" class="card-item">
+        <div><strong i18n="@@nameLabel">Name:</strong> {{ item.Name }}</div>
+        <div><strong i18n="@@phoneLabel">Phone:</strong> {{ item.Phone }}</div>
+        <div><strong i18n="@@emailLabel">Email:</strong> {{ item.Email }}</div>
+        <div><strong i18n="@@addressLabel">Address:</strong> {{ item.Address }}</div>
+        <div><strong i18n="@@statusLabel">Approval Status:</strong> {{ item.status }}</div>
 
-  
- </div>
+        <!-- أزرار Yes و No -->
+        <div class="btn-row">
+          <button i18n="@@yesButton" (click)="yes(i)" class="yes-btn">Yes</button>
+          <button i18n="@@noButton" (click)="no(i)" class="no-btn">No</button>
+        </div>
+      </div>
+    </ng-template>
 
+  </div>
+</div>
 
-    <!-- <button style="padding: 5px 10px;" (click)="ok()">ok</button>
-    <button style="padding: 5px 10px;" (click)="ok1()">ok</button>
-    <button style="padding: 5px 10px;" (click)="ok2()">oks</button>-->
+<style>
+/* ✅ الحاوية الأساسية */
+.container {
+  display: flex;
+  justify-content: center;    /* توسيط أفقي */
+  align-items: flex-start;    /* من الأعلى */
+  min-height: 100vh;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+/* ✅ شبكة الأعمدة */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ✅ حالة عدم وجود بيانات */
+.no-data {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-weight: bold;
+  color: #999;
+}
+
+/* ✅ بطاقة فردية */
+.card-item {
+  background: #000;            /* خلفية باللون الأسود */
+  color: #f5a623;              /* نص باللون الذهبي */
+  border: 1px solid #f5a623;   /* حدود ذهبية */
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(255, 165, 35, 0.3); /* ظل ذهبي خفيف */
+  font-size: 0.9em;
+  box-sizing: border-box;
+  min-height: 150px;
+}
+
+/* ✅ صف الأزرار */
+.btn-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+/* ✅ زر Yes */
+.yes-btn {
+  flex: 1;
+  background-color: #f5a623;   /* زر Yes باللون الذهبي */
+  color: #000;                 /* النص باللون الأسود */
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ✅ زر No */
+.no-btn {
+  flex: 1;
+  background-color: #000;       /* زر No باللون الأسود */
+  color: #f5a623;               /* النص باللون الذهبي */
+  border: 1px solid #f5a623;    /* حدود ذهبية */
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ✅ تحسين للموبايل */
+@media (max-width: 600px) {
+  .card-item {
+    font-size: 1em;
+  }
+
+  .btn-row button {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+</style>
