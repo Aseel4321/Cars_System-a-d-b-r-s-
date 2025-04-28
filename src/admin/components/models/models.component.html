@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="card-wrapper">
+    <div *ngFor="let item of list; let i = index" class="card-item">
+
+      <!-- سطر 1: Model و Name -->
+      <div class="item-row">
+        <span class="item-label">Model:</span>
+        <span class="item-value">{{ item.Name }}</span>
+      </div>
+
+      <!-- سطر 2: Company و الاسم -->
+      <div class="item-row">
+        <span class="item-label">Company:</span>
+        <span class="item-value">{{ item.Company }}</span>
+      </div>
+
+      <!-- زر الحذف -->
+      <button (click)="deleteItem(i)" class="delete-btn">Delete</button>
+
+    </div>
+  </div>
+</div>
+
+<style>
+/* الحاوية الأساسية */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* الحاوية الخاصة بالبطاقات */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* بطاقة فردية */
+.card-item {
+  background-color: black;
+  color: gold;
+  border: 1px solid gold;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: calc(25% - 20px); /* عرض البطاقة */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير على البطاقة عند التمرير */
+.card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+}
+
+/* تنسيق لكل سطر من العناصر */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* تنسيق النصوص */
+.item-label {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+.item-value {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* زر الحذف */
+.delete-btn {
+  align-self: flex-end;
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ffb84d;
+}
+
+/* تحسينات للتصميم المتجاوب */
+@media (max-width: 768px) {
+  .card-item {
+    width: calc(50% - 20px); /* 2 أعمدة على الشاشات الصغيرة */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-item {
+    width: 100%; /* عمود واحد على الشاشات الصغيرة جداً */
+  }
+}
+</style>
+
+
+
+
+
+

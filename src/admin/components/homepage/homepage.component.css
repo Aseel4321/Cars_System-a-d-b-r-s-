@@ -1,0 +1,18 @@
+.headerd{
+    height: 15vh; width: 100vw; background-color:  #000000;; color: gold; 
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 30px; font-size: 26px; font-weight: bold; 
+    box-shadow: 0 4px 6px rgba(255, 215, 0, 0.3);    
+}
+
+.buttond{
+    padding: 6px 14px; background-color: gold; color: black; 
+    border: none; border-radius: 6px; cursor: pointer; font-weight: bold;
+}
+
+.sider{
+    display: flex; height: 100vh; background-color: #111; color: gold;   
+}
+.item{padding: 20%; font-size: 30px;
+    background-color: #000; padding: 35%; border-right: 1px solid gold;
+} 

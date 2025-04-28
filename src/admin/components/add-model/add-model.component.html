@@ -1,0 +1,25 @@
+<div class="container mt-4" style="width: 100vw;padding-left: 50%;padding-top: 15%;">
+  <div style="margin-top: 15%;width: 100%;">
+    <h2 class="mb-4" >Add Car Model</h2>
+
+    <form #v="ngForm" style="display: flex;flex-direction: column;">
+
+      <label for="car-model" >Select Car Model</label>
+      <select id="car-model" name="carModel" [(ngModel)]="selectedModel" style="padding: 8px; font-size: 16px;" required>
+        <option *ngFor="let model of carModelOptions" [value]="model.value">
+          {{ model.label }}
+        </option>
+      </select>
+
+      <label for="car-company" >Select Car Manufacturer:</label>
+      <select id="car-company" name="carCompany" [(ngModel)]="selectedManufacturer" style="padding: 8px; font-size: 16px;" required>
+        <option *ngFor="let company of carManufacturers" [value]="company.value">
+          {{ company.label }}
+        </option>
+      </select>
+      <br>
+      <button class="btn btn-gold w-100" (click)="ok()" [disabled]="!v.valid">Add Model</button>
+    </form>
+  </div>
+</div>
+  

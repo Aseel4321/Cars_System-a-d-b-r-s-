@@ -1,76 +1,4 @@
 {
-  "locations": [
-    {
-      "id": "0",
-      "name": "Acme Fresh Start Housing",
-      "city": "Chicago",
-      "state": "IL",
-      "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-      "availableUnits": 4,
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "3",
-      "name": "Homesteady Housing",
-      "city": "Chicago",
-      "state": "IL",
-      "photo": "https://angular.dev/assets/images/tutorials/common/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
-      "availableUnits": 1,
-      "wifi": true,
-      "laundry": false
-    },
-    {
-      "id": "4",
-      "name": "Happy Homes Group",
-      "city": "Gary",
-      "state": "IN",
-      "photo": "https://angular.dev/assets/images/tutorials/common/krzysztof-hepner-978RAXoXnH4-unsplash.jpg",
-      "availableUnits": 1,
-      "wifi": true,
-      "laundry": false
-    },
-    {
-      "id": "7",
-      "name": "Hopeful Housing Solutions",
-      "city": "Oakland",
-      "state": "CA",
-      "photo": "https://angular.dev/assets/images/tutorials/common/r-architecture-GGupkreKwxA-unsplash.jpg",
-      "availableUnits": 2,
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "8",
-      "name": "aseelaseel882000",
-      "city": "jordan",
-      "state": "IL",
-      "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-      "availableUnits": 4,
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "9",
-      "name": "Capital Safe Towns",
-      "city": "Portland",
-      "state": "OR",
-      "photo": "https://angular.dev/assets/images/tutorials/common/webaliser-_TPTXZd9mOo-unsplash.jpg",
-      "availableUnits": 6,
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "22",
-      "name": "aseel",
-      "city": "jordan",
-      "state": "IL",
-      "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-      "availableUnits": 4,
-      "wifi": true,
-      "laundry": true
-    }
-  ],
   "users": [
     {
       "id": "3",
@@ -138,68 +66,18 @@
   "car_model": [
     {
       "id": "1",
-      "Name": "ford-focus",
-      "Company": "mazda"
-    },
-    {
-      "id": "1",
-      "Name": "honda-civic",
-      "Company": "bmw"
-    },
-    {
-      "id": "1",
-      "Name": "chevrolet-malibu",
-      "Company": "subaru"
-    },
-    {
-      "id": "1",
-      "Name": "toyota-corolla",
-      "Company": "volkswagen"
-    },
-    {
-      "id": "1",
-      "Name": "honda-civic",
-      "Company": "audi"
-    },
-    {
-      "id": "1",
-      "Name": "ford-focus",
-      "Company": "subaru"
-    },
-    {
-      "id": "1",
-      "Name": "toyota-corolla",
-      "Company": "mazda"
+      "Name": "nissan-altima",
+      "Company": "ford"
     },
     {
       "id": "1",
       "Name": "bmw-3-series",
-      "Company": "lexus"
+      "Company": "tesla"
     },
     {
       "id": "1",
       "Name": "toyota-corolla",
-      "Company": "subaru"
-    },
-    {
-      "id": "1",
-      "Name": "ford-focus",
-      "Company": "lexus"
-    },
-    {
-      "id": "1",
-      "Name": "honda-civic",
-      "Company": "lexus"
-    },
-    {
-      "id": "1",
-      "Name": "honda-civic",
-      "Company": "mazda"
-    },
-    {
-      "id": "1",
-      "Name": "honda-civic",
-      "Company": "tesla"
+      "Company": "toyota"
     }
   ],
   "cars": [
